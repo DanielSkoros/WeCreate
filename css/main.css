@@ -1,0 +1,321 @@
+html, body {
+    margin: 0 0 0 0;
+    padding:0 0 0 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    width: 25%;
+    margin: 30px auto;
+}
+
+.landing {
+    width: 100%;
+    height: calc(60vh + 20px);
+    background: rgb(254, 106, 130);
+    background: linear-gradient(45deg, rgba(254, 106, 130, 1) 20%, rgba(209, 78, 174, 1) 50%, rgba(146, 37, 240, 1) 80%);
+    position: relative;
+}
+
+.landing__header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    line-height: 70px;
+}
+
+.heading {
+    font-size: 116px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.04em;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.subheading {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+.container__waves{
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.wave__top {
+    background-image: url('../img/wave-top2.svg');
+    background-repeat: repeat no-repeat;
+    width: 600px;
+    height: 80px;
+    transform: rotate(180deg);
+    padding-bottom: 20px;
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+
+.wave__bottom {
+    background-image: url('../img/wave-top.svg');
+    background-repeat: repeat-x;
+    width: 700px;
+    height: 100px;
+    transform: rotate(180deg);
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.project__number, .culture__number, .exp__number {
+    font-size: 247px;
+    font-weight: bold;
+    color: #E479D7;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    margin: 0;
+}
+
+.culture__number{
+    color: #FB7F97;
+    font-family: 'Roboto', sans-serif;
+}
+
+.exp__number {
+    color:#E61FB6;
+}
+
+.overlay {
+    z-index: 1;
+    position: relative;
+    top: 25px;
+    left: 80px;
+    width: 500px;
+}
+
+.projects__heading {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.12em;
+    color: #563285;
+}
+
+.projects__description {
+    font-size: 16px;
+    color: #563285;
+    font-weight: bold;
+}
+
+.btn {
+    border: 3px solid #E479D7;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    background: transparent;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background: #E479D7;
+}
+
+.image, .image__culture, .exp__image {
+    background-image: url("../img/img1.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    align-self: flex-end;
+    margin: 60px;
+    width: 500px;
+    height: 300px;
+}
+.image__culture {
+    background-image: url("../img/img2.jpg");
+}
+
+.exp__image {
+    background-image: url("../img/img3.jpg");
+    background-position: 30% 40%;
+    background-size: cover;
+
+}
+
+.ideas__container {
+    margin-bottom: 50px;
+}
+
+.ideas__heading__photo {
+    background-image: url("../img/fullbg.jpg");
+    background-position: 20% 90%;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    transform: scaleX(-1) scaleY(-1);
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas__heading {
+    transform: scaleX(-1) scaleY(-1);
+    font-size: 73px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wave__left {
+    background-image: url("../img/wave-bottom.svg");
+    background-repeat: repeat no-repeat;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+footer {
+    width: 100vw;
+    height: 600px;
+    background: rgb(254,106,130);
+    background: linear-gradient(159deg, rgba(254,106,130,1) 0%, rgba(209,78,174,1) 50%, rgba(146,37,240,1) 80%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer__heading {
+    font-size: 63px;
+    color:#460B72;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.footer__credits {
+    font-size: 12px;
+}
+
+.footer__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__input {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    position: relative;
+    margin: 25px auto;
+    width: 500px;
+    height: 20px;
+}
+
+.footer__input:focus {
+    outline: none;
+}
+
+.footer__input::placeholder {
+    color: black;
+    position: relative;
+    bottom: 12px;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    padding-bottom: 10px;
+    transition: 0.2s ease all;
+}
+
+textarea {
+    background: transparent;
+    border: 3px solid black;
+    outline: none;
+    resize: none;
+    height: 150px;
+    width: 500px;
+    margin: 40px auto;
+}
+textarea::placeholder {
+    position: absolute;
+    color: black;
+}
+
+.footer__btn__container {
+    width: 200px;
+}
+
+.footer__btn {
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    background: transparent;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid white;
+    color: white;
+}
+
+.footer__btn:hover {
+    background: #E479D7;
+}
+
