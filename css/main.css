@@ -319,3 +319,270 @@ textarea::placeholder {
     background: #E479D7;
 }
 
+@media (min-width: 1281px) {
+
+    nav ul {
+        width: 70%;
+    }
+
+    .landing {
+        height: 50vh;
+        margin-bottom: 150px;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .text {
+        padding: 0 20px;
+    }
+
+    .projects__description {
+        font-size: 14px;
+    }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    nav ul {
+        width: 70%;
+    }
+
+    .landing {
+        height: 50vh;
+        margin-bottom: 150px;
+    }
+
+    .container {
+        width: 95vw;
+    }
+
+    .text {
+        width: 700px;
+    }
+
+    .image, .image__culture, .exp__image {
+        width: 400px;
+    }
+
+    .footer__heading {
+        font-size: 58px;
+    }
+
+    .footer__input {
+        width: 400px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav ul {
+        width: 70%;
+    }
+
+    .landing {
+        height: 50vh;
+        margin-bottom: 150px;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .text {
+        width: 700px;
+    }
+
+    .image, .image__culture, .exp__image {
+        display: none;
+    }
+
+    .footer__heading {
+        font-size: 48px;
+        padding-bottom: 50px;
+    }
+
+    .footer__input {
+        width: 300px;
+    }
+
+    footer {
+        margin-top: 100px;
+        padding: 50px 0;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    .ideas__container {
+        margin-top: 100px;
+    }
+
+    .ideas__heading__photo {
+        width: 100vw;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    nav ul {
+        width: 90%;
+        justify-content: flex-start;
+    }
+
+    nav ul li{
+        padding-right: 27px;
+    }
+
+    .landing {
+        height: 30vh;
+        margin-bottom: 150px;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .overlay {
+        width: 300px;
+    }
+
+    .image, .image__culture, .exp__image {
+        display: none;
+    }
+
+    .footer__heading {
+        font-size: 32px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer__input {
+        width: 300px;
+    }
+
+    footer {
+        margin-top: 100px;
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 300px;
+        height: 120px;
+    }
+
+    .ideas__container {
+        margin-top: 100px;
+    }
+
+    .ideas__heading__photo {
+        width: 100vw;
+    }
+
+    .ideas__heading {
+        font-size: 48px;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    nav ul {
+        width: 90%;
+        justify-content: flex-start;
+    }
+
+    nav ul li{
+        padding-right: 9px;
+        font-size: 80%;
+    }
+
+    .heading {
+        font-size: 92px;
+    }
+
+    .landing {
+        height: 100vh;
+        margin-bottom: 150px;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .projects__description {
+        word-wrap: break-word;
+    }
+
+    .overlay {
+        width: 240px;
+    }
+
+    .image, .image__culture, .exp__image {
+        display: none;
+    }
+
+    .footer__heading {
+        font-size: 32px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer__input {
+        width: 300px;
+    }
+
+    footer {
+        margin-top: 100px;
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 300px;
+        height: 120px;
+    }
+
+    .ideas__heading__photo {
+        width: 100vw;
+    }
+
+    .ideas__container {
+        width: 100vw;
+        margin-top: 100px;
+    }
+
+    .ideas__heading {
+        font-size: 48px;
+    }
+
+}
+
